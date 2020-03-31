@@ -78,10 +78,12 @@ REPOSITORY TAG IMAGE ID CREATED SIZE
 # Below commands lists the docker images
 
 PS C:\git\docker\express_webapp> docker image ls
+
+
 REPOSITORY TAG IMAGE ID CREATED SIZE
-basic latest f9cb353e1296 21 minutes ago 69.8MB
+
 expresswebapp latest f9cb353e1296 21 minutes ago 69.8MB
-alpine latest a187dde48cd2 7 days ago 5.6MB
+
 
 # Below commands runs the app directly
 
