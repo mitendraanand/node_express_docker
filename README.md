@@ -13,7 +13,10 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 
 Try the new cross-platform PowerShell https://aka.ms/pscore6
 
+# Below commands builds the docker image
+
 PS C:\git\docker\express_webapp> docker build --rm -f "Dockerfile" -t expresswebapp:latest "."
+
 Sending build context to Docker daemon 18.84MB
 Step 1/8 : FROM alpine
 latest: Pulling from library/alpine
@@ -68,36 +71,17 @@ Removing intermediate container f222cc70d2e7
 Successfully tagged expresswebapp:latest
 SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories
 added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
+
 PS C:\git\docker\express_webapp> docker image ls expresswebapp:latest
 REPOSITORY TAG IMAGE ID CREATED SIZE
+
+# Below commands lists the docker images
 
 PS C:\git\docker\express_webapp> docker image ls
 REPOSITORY TAG IMAGE ID CREATED SIZE
 basic latest f9cb353e1296 21 minutes ago 69.8MB
 expresswebapp latest f9cb353e1296 21 minutes ago 69.8MB
 alpine latest a187dde48cd2 7 days ago 5.6MB
-
-PS C:\git\docker\express_webapp> ls
-
-    Directory: C:\git\docker\express_webapp
-
-Mode LastWriteTime Length Name
-
----
-
-d----- 31-03-2020 03:10 node_modules
--a---- 31-03-2020 03:08 216 circle.yml
--a---- 31-03-2020 03:13 332 Dockerfile
--a---- 31-03-2020 03:10 43230 package-lock.json
--a---- 31-03-2020 03:08 421 package.json
--a---- 31-03-2020 03:12 244 README.md
-
-PS C:\git\docker\express_webapp> docker image ls
-REPOSITORY TAG IMAGE ID CREATED SIZE
-basic latest f9cb353e1296 24 minutes ago 69.8MB
-expresswebapp latest f9cb353e1296 24 minutes ago 69.8MB
-alpine latest a187dde48cd2 7 days ago 5.6MB
-PS C:\git\docker\express_webapp> docker run expresswebapp
 
 # Below commands runs the app directly
 
